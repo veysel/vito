@@ -28,30 +28,33 @@ void readFile()
         countSecond++;
     }
 
-    int countObject = 0;
-    for (int i = 0; i < ARRAY_COUNT; i++)
-    {
-        for (int j = 0; j < ARRAY_COUNT; j++)
-        {
-            if (toDoList[i][0] != "#")
-            {
-                break;
-            }
+    // int countObject = 0;
+    // for (int i = 0; i < ARRAY_COUNT; i++)
+    // {
+    //     for (int j = 0; j < ARRAY_COUNT; j++)
+    //     {
+    //         if (toDoList[i][0] != "#")
+    //         {
+    //             break;
+    //         }
 
-            //cout << toDoList[i][j] << " ";
-        }
+    //         //cout << toDoList[i][j] << " ";
+    //     }
 
-        if (toDoList[i][0] != "#")
-        {
-            break;
-        }
+    //     if (toDoList[i][0] != "#")
+    //     {
+    //         break;
+    //     }
 
-        countObject++;
-        //cout << endl;
-    }
+    //     countObject++;
+    //     //cout << endl;
+    // }
+
+    // cout << endl
+    //      << "Listenizde Bulunan Not Sayısı : " << countObject << endl;
 
     cout << endl
-         << "Listenizde Bulunan Not Sayısı : " << countObject << endl;
+         << "Listenizde Bulunan Not Sayısı : " << countFirst + 1 << endl;
 }
 
 int main()
