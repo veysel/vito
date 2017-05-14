@@ -55,6 +55,37 @@ void readFile()
 
     cout << endl
          << "Listenizde Bulunan Not Sayısı : " << countFirst + 1 << endl;
+
+    string command;
+    while (true)
+    {
+        cout << endl
+             << "Komut girin : ";
+        cin >> command;
+
+        if (command=="listele")
+        {
+            for (int i = 0; i < ARRAY_COUNT; i++)
+            {
+                for (int j = 0; j < ARRAY_COUNT; j++)
+                {
+                    if (toDoList[i][0] != "#")
+                    {
+                        break;
+                    }
+
+                    cout << toDoList[i][j] << " ";
+                }
+
+                if (toDoList[i][0] != "#")
+                {
+                    break;
+                }
+
+                cout << endl;
+            }
+        }
+    }
 }
 
 int main()
