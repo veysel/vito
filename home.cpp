@@ -63,7 +63,7 @@ void readFile()
              << "Komut girin : ";
         cin >> command;
 
-        if (command=="listele")
+        if (command == "listele")
         {
             for (int i = 0; i < ARRAY_COUNT; i++)
             {
@@ -84,6 +84,10 @@ void readFile()
 
                 cout << endl;
             }
+        }
+        else if (command == "exit")
+        {
+            break;
         }
     }
 }
